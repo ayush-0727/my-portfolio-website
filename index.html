@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ayush Pratap Singh</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="left">Ayush's Portfolio</div>
+        <div class="right"><ul>
+            <li><a href="/" class="glow">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="./project.html">Projects</a></li>
+            <li><a href="./academics.html">Academics</a></li>
+            <li><a href="./contact.html">Contact Me</a></li>
+        </ul></div>
+      </nav>
+    </header>
+
+    <main>
+        <section class="firstSection">
+            <div class="leftSection">
+                Hi, My name is <span class="purple">Ayush</span>
+                <div>and I am a passionate</div>
+                <span id="element"></span>
+                <div class="github">
+                <button>
+                  <a href="https://github.com/ayush-0727" target="_blank">Visit Github</a>
+                </button>
+                </div>
+            </div>
+
+            <div class="rightSection">
+                <img src="./ayush - Copy.png" alt="Ayush" width="90%">
+            </div>
+        </section>
+
+        <section class="secondSection">
+            <h1 id="about">About Me</h1>
+            <div>
+                <p>I am from Uttarakhand, the "Land of the Gods," and I am currently pursuing an M.Tech (TA) in Computer Science and Engineering from IIT Bombay. I have a profound interest in research, machine learning, sports, and finance. As an ambivert, I am enthusiastic and humorous, always eager to learn more every day. Outside of my professional interests, I enjoy listening to music, browsing the internet, playing sports (especially cricket), and traveling. Feel free to explore my profile to learn more about me.</p>
+            </div>
+        </section>
+    </main>
+
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <!-- Setup and start animation! -->
+    <script>
+        var typed = new Typed('#element', {
+          strings: ['Web Developer.', 'AI/ML enthusiast.'],
+          typeSpeed: 50,
+        });
+      </script>
+  </body>
+</html>

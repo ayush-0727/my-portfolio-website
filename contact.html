@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ayush Pratap Singh</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+        
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    box-sizing: border-box;
+    flex-direction: row;
+    overflow: hidden;
+    width: 80%;
+    margin: auto;
+}
+
+.lefty, .righty {
+    padding: 20px;
+    width: 50%;
+}
+
+.lefty {
+    display: flex;
+    flex-direction: column;
+}
+
+.righty {
+    background-color: #ffffff;
+}
+
+h2 {
+    margin-bottom: 20px;
+}
+
+p {
+    margin-bottom: 10px;
+}
+
+.container a {
+    color: #0073b1;
+    text-decoration: none;
+}
+
+.container a:hover {
+    text-decoration: underline;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 5px;
+    color: black;
+}
+
+input, textarea {
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #cccccc;
+    border-radius: 4px;
+    width: 96%;
+    font-family: "Poppins", sans-serif;
+}
+
+button {
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    background-color: rgb(2, 65, 65);
+    color: #ffffff;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.righty h2{
+    color: black;
+}
+
+button:hover {
+    background-color: #005f8b;
+}
+
+.lefty a{
+    color: white;
+}
+.lefty p{
+    display: flex;
+    margin-bottom: 20px;
+}
+
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .lefty, .righty {
+        width: 100%;
+    }
+}
+
+.container img {
+    margin-right: 10px; 
+}
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="left">Ayush's Portfolio</div>
+        <div class="right"><ul>
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./index.html#about">About</a></li>
+            <li><a href="./project.html">Projects</a></li>
+            <li><a href="./academics.html">Academics</a></li>
+            <li><a href="./contact.html" class="glow">Contact Me</a></li>
+        </ul></div>
+      </nav>
+    </header>
+
+    <div class="container">
+        <div class="lefty">
+            <h2>Contact Information</h2>
+            <p><img src="./gmail.png" alt="Gmail" width="30px"> <a href="mailto:geekyayush27@gmail.com">geekyayush27@gmail.com</a></p>
+            <p><img src="./linkedin.png" alt="Gmail" width="30px"> <a href="https://www.linkedin.com/in/ayush-pratap-singh-197455209" target="_blank">ayush-pratap-singh</a></p>
+        </div>
+        <div class="righty">
+            <h2>Contact Me</h2>
+            <form action="https://api.web3forms.com/submit" method="POST" id="myForm">
+                <input type="hidden" name="access_key" value="b48ae747-2ff8-46ef-a9ef-f4b8e77e5536">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+
+                <input type="hidden" name="redirect" value="https://web3forms.com/success">
+                <button type="submit" id="sendButton">Send</button>
+            </form>
+        </div>
+    </div>
+    
+    <script>
+            document.getElementById('sendButton').addEventListener('click', function() {
+            // Delay the form reset by 5 seconds (5000 milliseconds)
+            setTimeout(function() {
+                const form = document.getElementById('myForm');
+                form.reset();
+            }, 5000);
+        });
+    </script>
+  </body>
+</html>

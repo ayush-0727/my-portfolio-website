@@ -1,0 +1,152 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: rgb(4, 45, 45);
+    color: white;
+    font-family: "Poppins", sans-serif;
+}
+
+.poppins-regular {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgb(2, 65, 65);
+    height: 80px;
+}
+nav ul{
+    display: flex;
+    justify-content: center;
+}
+nav ul li{
+    list-style-type: none;
+    margin: 0 23px;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: white;
+}
+
+nav ul li a:hover{
+    color: rgb(209, 209, 244);
+    font-size: 1.05rem;
+}
+
+.left{
+    font-size: 1.5rem;
+}
+
+.firstSection{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 70px 0;
+}
+
+.firstSection>div{
+    width: 38%;
+}
+
+.leftSection{
+    font-size: 3rem;
+}
+
+.rightSection img{
+    width: 80%;
+}
+
+.purple{
+    color: rgb(145, 64, 222);
+    font-weight: 600;
+}
+
+#element{
+    color: rgb(145, 64, 222);
+}
+
+.secondSection{
+    width: 70vw;
+    margin: 20vh auto;
+}
+
+.secondSection h1{
+    font-size: 2rem;
+    width: 100%;
+    margin: auto;
+    text-align: center;
+}
+.secondSection p{
+    font-size: 1.2rem;
+    margin-top: 15px;
+    text-align: justify;
+}
+
+.projects{
+    margin: 3% 5%;
+}
+
+.project{
+    margin-top: 1%;
+}
+
+.projectDescription{
+    text-align: justify;
+}
+
+.projects button{
+        background-color: #0f4121;
+        padding: 7px 15px;
+        text-align: center;
+        font-size: 16px;
+        border: 2px solid #a1b4ad;
+        border-radius: 7px;
+}
+
+.projects button a{
+    text-decoration: none;
+    color: white;
+}
+
+.projects button:hover{
+    background-color: #0c341b;
+}
+
+.report-btn{
+    margin-left: 10px;
+}
+
+.github button{
+    background-color: #0f4121;
+    padding: 7px 15px;
+    text-align: center;
+    font-size: 16px;
+    border: 2px solid #ffffff;
+    border-radius: 5px;
+}
+
+.github a{
+    color: white;
+    text-decoration: none;
+}
+
+.github button:hover{
+    background-color: #0c341b;
+}
+
+.glow {
+    font-weight: bold;
+    font-size: 1.1rem;
+    text-decoration: underline;
+}
+
+
+
