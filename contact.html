@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Ayush Pratap Singh</title>
+    <link rel="icon" type="image/png" href="./favicon.jpeg">
     <link rel="stylesheet" href="style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -87,6 +88,7 @@ button {
 
 .righty h2{
     color: black;
+    text-align: center;
 }
 
 button:hover {
@@ -120,13 +122,14 @@ button:hover {
   <body>
     <header>
       <nav>
-        <div class="left">Ayush's Portfolio</div>
+        <div class="left"><img src="./iitb-logo.png" alt="IIT Bombay" width="100px"></div>
         <div class="right"><ul>
             <li><a href="./index.html">Home</a></li>
             <li><a href="./index.html#about">About</a></li>
             <li><a href="./project.html">Projects</a></li>
             <li><a href="./academics.html">Academics</a></li>
-            <li><a href="./contact.html" class="glow">Contact Me</a></li>
+            <li><a href="./contact.html" class="glow">Feedback</a></li>
+            <li><a href="./clonedWebpage/cb.html">Cloned Webpage</a></li>
         </ul></div>
       </nav>
     </header>
@@ -134,11 +137,12 @@ button:hover {
     <div class="container">
         <div class="lefty">
             <h2>Contact Information</h2>
-            <p><img src="./gmail.png" alt="Gmail" width="30px"> <a href="mailto:geekyayush27@gmail.com">geekyayush27@gmail.com</a></p>
+            <p><img src="./gmail.png" alt="Gmail" width="30px"> <a href="mailto:ayushpratap@cse.iitb.ac.in">ayushpratap@cse.iitb.ac.in</a></p>
             <p><img src="./linkedin.png" alt="Gmail" width="30px"> <a href="https://www.linkedin.com/in/ayush-pratap-singh-197455209" target="_blank">ayush-pratap-singh</a></p>
+            <p><img src="./github.png" alt="Gmail" width="30px"> <a href="https://github.com/ayush-0727" target="_blank">ayush-0727</a></p>
         </div>
         <div class="righty">
-            <h2>Contact Me</h2>
+            <h2>Submit your feedback!</h2>
             <form action="https://api.web3forms.com/submit" method="POST" id="myForm">
                 <input type="hidden" name="access_key" value="b48ae747-2ff8-46ef-a9ef-f4b8e77e5536">
                 <label for="name">Name:</label>
@@ -155,15 +159,5 @@ button:hover {
             </form>
         </div>
     </div>
-    
-    <script>
-            document.getElementById('sendButton').addEventListener('click', function() {
-            // Delay the form reset by 5 seconds (5000 milliseconds)
-            setTimeout(function() {
-                const form = document.getElementById('myForm');
-                form.reset();
-            }, 5000);
-        });
-    </script>
   </body>
 </html>

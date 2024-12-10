@@ -1,0 +1,161 @@
+body{
+    padding: 0;
+    background-color: rgb(217, 221, 217);
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header{
+    width: 72%;
+    margin: 25px auto;
+}
+
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: white;
+    background-color: rgb(7, 154, 7);
+    height: 55px;
+}
+
+
+.match-nav{
+    justify-content: left;
+    background-color: rgb(93, 92, 92);
+}
+.match-nav div{
+    margin-right: 35px;
+    height: 55px;
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+.matches{
+    background-color: black;
+    text-transform: uppercase;
+}
+.curr-matches{
+    height: 25vh;
+    margin-top: 5px;
+    display: flex;
+    justify-content: space-between;
+}
+.match{
+    display: flex;
+    border-radius: 10px;
+    width: 24%;
+    background-color: white;
+}
+
+.odi{
+    border: 2px solid skyblue;
+    border-radius: 15px;
+    background-color: skyblue;
+    padding: 4px;
+}
+.match-result{
+    color: rgb(25, 16, 195);
+}
+
+.quick{
+    justify-content: left;
+    background-color: white;
+    color: black;
+    margin-top: 7px;
+}
+
+.q{
+    margin-left: 15px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    box-sizing: border-box;
+    background-color: rgb(225, 226, 225);
+}
+.quickAccess{
+    background-color: white;
+    font-size: larger;
+    font-weight: bolder;
+    margin-left: 15px;
+}
+
+section{
+    display: flex;
+    width: 100%;
+}
+section div{
+    height: max-content;
+    margin-top: 5px;
+    margin-right: 5px;
+    background-color: white;
+    padding: 2px 15px;
+}
+.left{
+    flex: 1;
+}
+.middle{
+    flex: 2;
+}
+.right{
+    flex: 1.4;
+    margin-right: 0;
+}
+.red{
+    color: maroon;
+}
+.middle a{
+    text-decoration: none;
+}
+.middle img{
+    border-radius: 5px;
+}
+footer{
+    height: 30%;
+    background-color: rgb(73, 72, 72);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    color: white;
+}
+footer div{
+    width: 15%;
+    padding: 25px;
+}
+footer h3{
+    text-align: center;
+}
+footer ul li{
+    list-style: none;
+    cursor: pointer;
+}
+.last{
+    background-color: rgb(73, 72, 72);
+    width: 100%;
+    text-align: center;
+    color: white;
+    padding-bottom: 10px;
+}
+
+.plus{
+    border: 2px solid white;
+    background-color: white;
+    color: black;
+    padding: 8px;
+    border-radius: 25px;
+}
+
+nav div{
+    cursor: pointer;
+}
+
+.left h3{
+    color: rgb(7, 154, 7);
+}
+
+.right h3{
+    color: rgb(7, 154, 7);
+}
